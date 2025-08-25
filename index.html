@@ -662,18 +662,6 @@
       window.roullete.setMap(index);
     });
 
-    const checkDonateButtonLoaded = () => {
-      const btn = document.querySelector('span.bmc-btn-text');
-      if (!btn) {
-        setTimeout(checkDonateButtonLoaded, 100);
-      } else {
-        console.log('donation button has been loaded');
-        btn.setAttribute('data-trans', '');
-        window.translateElement(btn);
-      }
-    };
-    setTimeout(checkDonateButtonLoaded, 100);
-
     const currentNotice = 1;
     const noticeKey = 'lastViewedNotification';
 
@@ -777,12 +765,6 @@
       </button>
     </div>
   </div>
-</div>
-<div id="donate">
-  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-          data-name="bmc-button" data-slug="lazygyu" data-color="#FFDD00" data-emoji=""
-          data-font="Comic" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000"
-          data-coffee-color="#ffffff"></script>
 </div>
 <div id="inGame" class="settings hide">
   <button id="btnShake" data-trans>Shake!</button>
